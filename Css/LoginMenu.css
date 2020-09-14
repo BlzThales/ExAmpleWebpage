@@ -1,6 +1,9 @@
 .LoginMenu {
 	background-color : black;
-	size : 20%;
+	background : url(../Images/abstractRectangleBackground.png);
+	width :95%;
+	height: 95%;
+	margin: auto;
 	text-align : center;
 	font-size: 150%;
 	color: white;

@@ -1,0 +1,64 @@
+
+.BodyDefault{
+	background-color: #FFFAF0;	
+	background : url(../Images/abstractCirclesBackground.png);
+	margin: auto;
+	font-size:100%;
+	font-family: "Times New Roman", Times, serif;	
+	height:100%;	
+	
+}
+
+.BodyDefault h1{
+	margin : 2%;
+}
+
+.BodyDefault p{
+	font-size: 20px;
+	margin-left: 3%;
+	margin-right: 5%;
+	text-align: justify;
+}
+
+.HeaderDefault{
+	height: 16.5%;
+}
+
+.HeaderMenu {
+  display: flex;
+  max-width: 100%;
+  list-style: none;
+  padding-top: 5%;
+  width: 80%;
+}
+
+.HeaderMenu span {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+	background-color: black;
+}
+
+.HeaderMenu span:hover {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  background-color: #F0F8FF;
+}
+
+.HeaderMenu  a {
+    font-size: 40px;
+    color: #F0F8FF;
+	text-decoration: none;
+  }
+
+.HeaderMenu  a:hover {	
+    font-size: 43px;
+	color: black;
+  }
+  
+ #logoImage {
+	 float: left;
+	 width: 250px;
+	 height: auto;
+ }
