@@ -7,11 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="../Css/HomeDefault.css">
 		
 	<?php 
-		if($_POST['logInButton']){  
-			// remove all session variables  
-			session_unset();   
-	  
-			// destroy the session   
+		if($_POST['logInButton']){ 
+			session_unset();     
 			session_destroy();  
 		}  
 		if(!($_SESSION)){  
