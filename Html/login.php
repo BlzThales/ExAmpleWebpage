@@ -7,18 +7,23 @@
 		<link rel="stylesheet" type="text/css" href="../Css/LoginMenu.css">
 		
 		<?php 
-			include "../Php/User.php" 
-		
-			createNewUser($_POST['loginUserField'],$_POST['loginPasswordField'])
-		
+			include_once("../Php/User.php" );
+			
+			//echo ('<script type="text/javascript">alert("test")</script>');
+			if($_POST["logInButton"]){
+				$username = $_POST["loginUserField"];
+				$password = $_POST["loginPasswordField"];
+				//echo('<script type="text/javascript">alert("'.$username.$password.'");</script>');
+				$login = NEW User();
+				$login->logInUser( $username, $password);
+			}
 		?>
-		
 </head>
 
 <body style="background-color :black">
 
 	<div class="LoginMenu"> 
-	<form name="loginForm" method="post" action="log()" >
+	<form name="loginForm" method="post" action="" >
 	
 		<div> 
 			<img id="logoImage" src="../Images/logoDefault.png" alt="Company Logo"> 
@@ -36,11 +41,11 @@
 		</div>
 		
 		<div> <!-- Login form row 3 -->
-			<input type="submit" name="logInButton" value="Entrar" class="LoginButton">			
+			<input type="submit" name="logInButton" value="Entrar" id="LoginButton">			
 		</div>
 		
 		<div> <!-- Login form row 4 -->
-			<input type="submit" name="registerButton" value="Registrar-se" class="LoginButton">		
+			<input type="submit" name="registerButton" value="Registrar-se" id="LoginButton">		
 		</div>
 		
 	</form>
