@@ -1,0 +1,13 @@
+[
+{"type":"header","version":"5.0.2","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"examplewebsitedatabase"},
+{"type":"table","name":"users","database":"examplewebsitedatabase","data":
+[
+{"id":"1","username":"admin","password":"1234","permission":"1"},
+{"id":"2","username":"admin2","password":"aaaa","permission":"0"},
+{"id":"3","username":"thales","password":"aaa","permission":"0"},
+{"id":"4","username":"joao ","password":"1234aa","permission":"0"},
+{"id":"5","username":"maria ","password":"1234","permission":"0"}
+]
+}
+]

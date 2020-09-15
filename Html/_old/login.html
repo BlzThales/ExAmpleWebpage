@@ -19,7 +19,7 @@
 		<?php 
 			include_once("../Php/User.php" );
 			
-			
+			function login(){
 				$user = NEW User();
 				if(!empty($_POST["login"]))
 					$user->logInUser( $_POST["loginUserField"], $_POST["loginPasswordField"]);
@@ -29,7 +29,7 @@
 						$user->createNewUser($_POST["registerUserField"], $_POST["registerPasswordField"]);
 					else
 						echo('<script type="text/javascript">alert("Senhas Cadastradas são Diferentes");</script>');
-							
+				}			
 			}
 
 		?>

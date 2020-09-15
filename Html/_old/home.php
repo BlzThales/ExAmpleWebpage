@@ -11,7 +11,7 @@
 			session_unset();     
 			session_destroy();  
 		}  
-		if($_POST['logInButton'] ){ 
+		if($_POST['registerButton'] ){ 
 			echo('<script type="text/javascript">alert("Usuário Cadastrado!");</script>');
 			session_unset();     
 			session_destroy();  

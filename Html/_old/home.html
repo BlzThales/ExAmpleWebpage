@@ -7,37 +7,34 @@
 		<link rel="stylesheet" type="text/css" href="../Css/HomeDefault.css">
 		
 	<?php 
-		if($_POST['logInButton'] ){ 
-			session_unset();     
+		if($_POST['logInButton']){  
+			// remove all session variables  
+			session_unset();   
+	  
+			// destroy the session   
 			session_destroy();  
 		}  
-		if($_POST['logInButton'] ){ 
-			echo('<script type="text/javascript">alert("Usuário Cadastrado!");</script>');
-			session_unset();     
-			session_destroy();  
-		}
 		if(!($_SESSION)){  
-			header("Location:login.php");  
+			header("Location:index.php");  
 		} 
 	?>
 </head>
 
 <body style="background-color :black">
 
-				
-	
-	<div class="HeaderDefault">
-		<img id="logoImage" src="../Images/logoDefault.png" id="backgroundImage" alt="Company Logo">
-		<a href="#Home"    class="HeaderDefault"> Home </a>
-		<a href="#AboutUs" class="HeaderDefault"> Quem Somos </a>
-		<a href="#Contact" class="HeaderDefault"> Contato </a>
-			
+	<div class="HeaderDefault">			
+			<img id="logoImage" src="../Images/logoUnderBlack.png" alt="Company Logo">
+			<ul class="HeaderMenu">
+				<span><a href="#" > Home </a></span>
+				<span><a href="#" > Quem Somos </a></span>
+				<span><a href="#" > Contato </a></span>
+			</ul>
 	</div>
 	
 	<div class="BodyDefault">
 	
 		<br/><br/>
-		<h1> Lorem Ipsum </h1>
+		<h1> Lorem Ipsum</h1>
 		
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis lorem ornare quam rhoncus fringilla.

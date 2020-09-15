@@ -42,8 +42,8 @@ class User {
 			$database->executeQuery($sqlQuery);
 			
 			if(self::searchUser($username) == TRUE){
-				echo (ALERT_USER_SAVED);
-				//header("Location: home.html");
+				//echo (ALERT_USER_SAVED);
+				header("Location: home.html");
 			}			
 			else
 				echo (ERROR_USER_MESSAGE);

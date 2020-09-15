@@ -7,10 +7,15 @@
 		<link rel="stylesheet" type="text/css" href="../Css/HomeDefault.css">
 		
 	<?php 
-		if($_POST['logInButton']){ 
+		if($_POST['logInButton'] ){ 
 			session_unset();     
 			session_destroy();  
 		}  
+		if($_POST['logInButton'] ){ 
+			echo('<script type="text/javascript">alert("Usuário Cadastrado!");</script>');
+			session_unset();     
+			session_destroy();  
+		}
 		if(!($_SESSION)){  
 			header("Location:index.php");  
 		} 

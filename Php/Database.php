@@ -4,6 +4,8 @@
     define("DB_USER", "root");  
     define("DB_PASSWORD", "");  
     define("DB_NAME", "examplewebsitedatabase");
+	define("SEARCH",0);
+	define("INSERT",1);
 
 class Database{
 	
